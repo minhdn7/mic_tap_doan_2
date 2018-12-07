@@ -1,0 +1,81 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "vn.com.vnpt.vinaphone.vnptsoftware.qlvbdh.tapdoan"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 7
+        versionName "2.1.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile project(':weekview')
+    compile project(':treeview_lib')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.nhaarman.supertooltips:library:3.0.+'
+    compile 'com.nhaarman.supertooltips:library:3.0.+'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'org.projectlombok:lombok:1.16.8'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.android.support:support-v4:27.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.mobsandgeeks:android-saripaar:2.0.3'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.wada811:android-material-design-colors:3.0.0'
+    compile 'com.github.lguipeng:AnimCheckBox:1.0.1'
+    compile 'com.google.firebase:firebase-messaging:11.0.2'
+    compile 'com.jaredrummler:android-processes:1.0.8'
+    compile 'com.adityak:browsemyfiles:1.7'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    annotationProcessor 'org.projectlombok:lombok:1.16.8'
+    provided 'javax.annotation:jsr250-api:1.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.5@aar') {
+        transitive = true;
+    }
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rcvDanhSach" type="id"/>
+    <item name="txtSearch" type="id"/>
+    <item name="leftButton" type="id"/>
+    <item name="rightButton" type="id"/>
+</resources>

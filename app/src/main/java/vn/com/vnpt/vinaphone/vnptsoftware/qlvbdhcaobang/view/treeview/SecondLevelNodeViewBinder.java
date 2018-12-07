@@ -1,0 +1,74 @@
+package vn.com.vnpt.vinaphone.vnptsoftware.qlvbdhcaobang.view.treeview;
+
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import me.texy.treeview.TreeNode;
+import me.texy.treeview.base.MoveDocNodeViewBinder;
+import vn.com.vnpt.vinaphone.vnptsoftware.qlvbdhcaobang.R;
+import vn.com.vnpt.vinaphone.vnptsoftware.qlvbdhcaobang.configuration.Application;
+import vn.com.vnpt.vinaphone.vnptsoftware.qlvbdhcaobang.model.pojo.respone.PersonSendNotifyInfo;
+
+/**
+ * Created by zxy on 17/4/23.
+ */
+
+public class SecondLevelNodeViewBinder extends MoveDocNodeViewBinder {
+
+    TextView textView;
+    ImageView imageView;
+    public SecondLevelNodeViewBinder(View itemView) {
+        super(itemView);
+        textView = (TextView) itemView.findViewById(R.id.node_name_view);
+        imageView = (ImageView) itemView.findViewById(R.id.arrow_img);
+    }
+
+    @Override
+    public int getCheckXLCViewId() {
+        return R.id.checkXLChinh;
+    }
+
+    @Override
+    public int getCheckPHViewId() {
+        return R.id.checkBoxPH;
+    }
+
+    @Override
+    public int getCheckXEMViewId() {
+        return R.id.checkBoxXEM;
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.item_second_level;
+    }
+
+    @Override
+    public void bindView(final TreeNode treeNode) {
+        if (!treeNode.hasChild()) {
+            imageView.setVisibility(View.GONE);
+        } else {
+            imageView.setVisibility(View.VISIBLE);
+            if (treeNode.isExpanded()) {
+                imageView.setImageResource(R.drawable.ic_minus);
+            } else {
+                imageView.setImageResource(R.drawable.ic_add);
+            }
+        }
+
+        textView.setTypeface(Application.getApp().getTypeface());
+        textView.setText(((PersonSendNotifyInfo)treeNode.getValue()).getName());
+    }
+
+    @Override
+    public void onNodeToggled(TreeNode treeNode, boolean expand) {
+        if (treeNode.hasChild()) {
+            if (expand) {
+                imageView.setImageResource(R.drawable.ic_minus);
+            } else {
+                imageView.setImageResource(R.drawable.ic_add);
+            }
+        }
+    }
+}

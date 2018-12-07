@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+        <item name="android:popupMenuStyle">@style/popupMenuStyle</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/backgroundBlue</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/md_grey_300</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+        <item name="android:popupMenuStyle">@style/popupMenuStyle</item>
+    </style>
+
+    <style name="popupMenuStyle" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="android:fontFamily">/arial.ttf</item>
+    </style>
+
+    <style name="spinner_style_c">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+    </style>
+
+    <style name="spinner_style_radius">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/gradient_spinner_radius</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/arial</item>
+    </style>
+
+</resources>

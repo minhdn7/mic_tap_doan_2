@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Chọn theo nhóm người nhận"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/btnSelect"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_confirm_person"/>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

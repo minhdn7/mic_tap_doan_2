@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:id="@+id/itemNotify">
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/layoutNotifyDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/img_anh_dai_dien"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:src="@mipmap/ic_launcher"/>
+        </FrameLayout>
+
+        <CheckBox
+            android:button="@drawable/custom_checkbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_marginTop="10dp"
+            android:id="@+id/checkNotify" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textColor="@color/md_black"
+                    android:text="@string/NO_TITLE_NAME"/>
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textColor="@color/md_black"
+                    android:text="@string/NO_TITLE_NAME"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/txtDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_blue_800"
+                    android:textSize="16dp"
+                    android:text="@string/NO_DATE"/>
+                <TextView
+                    android:id="@+id/txtDate2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_red_500"
+                    android:textSize="16dp"
+                    android:text="@string/NO_TIME"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/md_grey_200"/>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/itemDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/khach"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_avata"
+                    android:layout_gravity="center"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/fullname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_kh"
+                            tools:text="Huỳnh Quang Liêm :"
+                            android:textColor="@color/colorLineGrey" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorLineGrey"
+                            tools:text="09/10/2018 22:38:37" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/padding_6dp"
+                        android:background="@drawable/background_border_blue"
+                        android:padding="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/md_white"
+                            tools:text="Em thấy nội dung A cần xem xétdqwdqwdqwdqwdqwdqwdqwdqwdqdqwdqwdwefwefwefwefwefwefwe" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chu"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:visibility="visible"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/timeAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorLineGrey"
+                    tools:text="09/10/2018 22:38:37" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/background_border"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:padding="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/commentAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/md_black"
+                    tools:text="Em thấy nội dung A cần xem xétwldlqwdq';wd;qwd;qwdqwddlqw,dq,wdqwdqwd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

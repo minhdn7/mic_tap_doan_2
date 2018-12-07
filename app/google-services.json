@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "649750976016",
+    "firebase_url": "https://tapdoan-vnptoffice.firebaseio.com",
+    "project_id": "tapdoan-vnptoffice",
+    "storage_bucket": "tapdoan-vnptoffice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649750976016:android:8a7bbae0f4e8d8a3",
+        "android_client_info": {
+          "package_name": "vn.com.vnpt.vinaphone.vnptsoftware.qlvbdh.tapdoan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649750976016-4bju8bb8a0m026ag707liklq40sk72hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA87mS7naKsprBIZqAcgCOns-2wlUzTfPc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
